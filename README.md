@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+全体的な処理の流れ
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+①[present-line-bot](https://github.com/ryo-s2000/present-line-bot)からリクエストを受ける [/config/routes.rb](https://github.com/ryo-s2000/linebot-present-recommender/blob/master/config/routes.rb)
+②controllerにてrakeタスクを実行し必要なデータを取得す [/app/controllers/api/watson_data_controller.rb](https://github.com/ryo-s2000/linebot-present-recommender/blob/master/app/controllers/api/watson_data_controller.rb)
+③データを返す [/app/views/api/watson_data/index.json.jbuilder](https://github.com/ryo-s2000/linebot-present-recommender/blob/master/app/views/api/watson_data/index.json.jbuilder)
